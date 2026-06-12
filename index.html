@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
   <head>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="./styles.css" />
     <!--
             we use ./ at the beginning of the path
             to indicate that the file is in the same folder
@@ -12,15 +12,9 @@
       rel="stylesheet"
     />
     <!--
-            we use the link tag to import fonts from Google Fonts.
+            we use the 'link' tag to import fonts from Google Fonts.
             The href attribute contains the URL of the font we want to import.
-            The rel attribute is set to "stylesheet" to indicate that we are importing a stylesheet.
-            -->
-    <script type="module" src="index.js"></script>
-    <!--
-            we use type="module" to indicate that the JavaScript file is a module.
-            This allows us to use import and export statements in our JavaScript code.
-            Meaning we're not shoiwing flat text but we can import functions and variables from other JavaScript files.
+            The rel attribute is set to "stylesheet" to indicate that we are importing a stylesheet. 
             -->
   </head>
   <body>
@@ -28,23 +22,42 @@
         Challenge 1:
         Write the HTML for your personal website.
         -->
-    <img src="Isr.jpg" alt="A profile picture of Israel" />
+    <img
+      src="./Isr.jpg"
+      alt="Profile picture of Israel, sporting a deep green hipster glasses, silver hoops, mustache and a medium afro"
+    />
     <h1>Hi, my name is Israel 🚀</h1>
-    <h2>Fun facts about me:</h2>
-    <ul>
-      <li>34 years old</li>
-      <li>Living in Bogotá, Colombia</li>
-      <li>Love to read</li>
-    </ul>
-    <p>
-      Please connect with me on
-      <a
-        href="https://www.linkedin.com/in/israel-guevara-4490422ba/"
-        target="_blank"
-        >LinkedIn here</a
-      >
-    </p>
-    <input type="email" placeholder="Enter your email…" />
-    <button>Join newsletter</button>
+
+    <section>
+      <h2>Fun facts about me:</h2>
+      <ul>
+        <li>34 years old</li>
+        <li>Living in Bogotá, Colombia</li>
+        <li>Love to read</li>
+      </ul>
+    </section>
+
+    <section>
+      <p>
+        Please connect with me on
+        <a
+          href="https://www.linkedin.com/in/israel-guevara-4490422ba/"
+          target="_blank"
+          >LinkedIn here
+        </a>
+      </p>
+
+      <form>
+        <input type="email" placeholder="Enter your email…" />
+        <button>Join newsletter</button>
+      </form>
+    </section>
+
+    <script type="module" src="index.js"></script>
+    <!--
+            we use type="module" to indicate that the JavaScript file is a module.
+            This allows us to use import and export statements in our JavaScript code.
+            Meaning we're not shoiwing flat text but we can import functions and variables from other JavaScript files.
+            -->
   </body>
 </html>
